@@ -1,4 +1,4 @@
-# FusionSuite website
+# FusionEcosystem website
 
 This reporitory is used to manage the website.
 
