@@ -1,0 +1,25 @@
+// Styling for the team section
+.rules-rule {
+  text-align: left;
+  margin-left: 20px;
+  img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid fade-out($black, 0.9);
+  }
+  span {
+    margin-top: 0;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  i {
+    color: #ee0701;
+  }
+}
+
+.ruletitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ee0701;
+}

@@ -1,0 +1,208 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[page.lang].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: The Free Software ethical label
+    buttonlink: "#certifiedprojects"
+
+  certifiedprojects:
+    title: "Certified projects"
+    text: "List of projects certified in 2024 (current year).<br><br>None at the moment."
+    section: certifiedprojects
+    list:
+      # - title: "FusionInventory"
+      #   desc: "Devices inventory (computers, printers, switches...) ans software deployment."
+      #   url: "https://fusioninventory.org"
+      #   logo: assets/img/certifiedprojects/fusioninventory.png
+      # - title: "FusionSuite"
+      #   desc: "FusionSuite is a software can help you to manage assets and your IT service."
+      #   url: "https://fusionsuite.org"
+      #   logo: assets/img/certifiedprojects/fusionsuite.png
+
+  presentation:
+    section: presentation
+    description: |
+      The FusionEcosystem LABEL is a quality label for Free Software projects.
+      <br>
+      The goal is to have rules that give to the community all information on the project.
+      <br><br>
+      It forces interaction between the project and the community (like feature requests, changelog, news...)
+      <br><br>
+      *"In the world where many companies create Open-source tools but the project is closed,
+      <br>I wanted to create this label for the community to quickly recognize if a project is designed for and with the community"*
+      <br>
+      *David Durieux, August 26, 2024*
+
+  rules:
+    title: "THE RULES"
+    text: "Let us introduce you for the rules needed to obtain the certificate."
+    section: rules
+    groups:
+      - title: "General"
+        rules:
+        - name: "Free Software license"
+          description: "The products of the project must be under a free software license, so one of [this list](https://opensource.org/licenses)."
+        - name: "Link to code repository/repositories on homepage"
+          description: "The code repository/repositories link must be displayed in the first 400 pixels (height) of the homepage of the website."
+        - name: "Contacts"
+          description: "On the website, the information to contact members of the project must be displayed, and easy to find."
+        - name: "Website language"
+          description: "The website must be, at least, in english."
+        - name: "Fresh news"
+          description: "The website must have news, and, at least, one news item per quarter."
+      - title: "Changelog"
+        rules:
+        - name: "Webpage"
+          description: "The project must have a public page with the changelog (can be on own website or on another website)."
+        - name: "Link on the home page"
+          description: "On the homepage of the website, the link to the changelog must be displayed in the first 400 pixels (height)."
+      - title: "Community requested features"
+        rules:
+          - name: "Users"
+            description: "Any user can create a feature request."
+          - name: "List of features"
+            description: "The project must have a webpage with the list of feature requests (in any state)."
+          - name: "Rejected feature"
+            description: "In case of a feature request is rejected, a reason MUST BE GIVEN."
+          - name: "Accepted reason"
+            description: "In case of the feature request is accepted, the version targeted must be defined."
+          - name: "Link on the home page"
+            description: "On the homepage of the website, the link to the feature requests list must be displayed in the first 400 pixels (height)."
+      - title: "CVE"
+        rules:
+          - name: "Webpage"
+            description: "The project must have a page with the list of CVEs of its products."
+          - name: "Link on the home page"
+            description: "On the homepage of the website, the link to the CVE list must be displayed in the first 400 pixels (height)."
+      - title: "Documentation"
+        rules:
+          - name: "Documentation"
+            description: "The project must have a documentation, at least, in HTML format."
+          - name: "Link on the home page"
+            description: "On the homepage of the website, the link to the documentation must be displayed in the first 400 pixels (height)."
+
+  contact:
+    title: "Contact Us"
+    text: "Several channels to contact us"
+    items:
+      - url: https://discord.gg/KdR6dyzNUU
+        icon: "fab fa-discord"
+      - email: 'david+fusionecosystem@durieux.family'
+        icon: "fas fa-at"
+
+  footer:
+    legal: "Privacy Policy"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Français
+# -------
+fr: &DEFAULT_FR
+  header:
+    title: Le label éthique du Logiciel Libre
+    buttonlink: "#certifiedprojects"
+
+  certifiedprojects:
+    title: "Les projets certifiés"
+    text: "Liste des projets certifiés en 2024 (année en cours).<br><br>Aucun pour le moment."
+    section: certifiedprojects
+    list:
+      # - title: "FusionInventory"
+      #   desc: "Devices inventory (computers, printers, switches...) ans software deployment."
+      #   url: "https://fusioninventory.org"
+      #   logo: assets/img/certifiedprojects/fusioninventory.png
+      # - title: "FusionSuite"
+      #   desc: "FusionSuite is a software can help you to manage assets and your IT service."
+      #   url: "https://fusionsuite.org"
+      #   logo: assets/img/certifiedprojects/fusionsuite.png
+
+  presentation:
+    section: presentation
+    description: |
+      Le LABEL FusionEcosystem est un label de qualité pour les projets de Logiciel Libre.
+      <br>
+      L'objectif est d'avoir des règles qui donnent à la communauté toutes les informations sur le projet.
+      <br><br>
+      Il force l'interaction entre le projet et la communauté (comme les demandes de fonctionnalités, le changelog, les actualités...)
+      <br><br>
+      *"Dans le monde où de nombreuses entreprises créent des outils Open-source mais dont le projet est fermé,
+      <br>j'ai voulu créer ce label pour que la communauté reconnaisse rapidement si un projet est conçu pour et avec la communauté"*
+      <br>
+      *David Durieux, 26 août 2024*
+
+  rules:
+    title: "LES REGLES"
+    text: "Laissez-nous vous présenter les règles nécessaires à l'obtention du certificat."
+    section: rules
+    groups:
+      - title: "Géneral"
+        rules:
+        - name: "Licence de logiciel libre"
+          description: "Les produits du projet doivent être sous une licence de logiciel libre, donc l'une de [cette liste](https://opensource.org/licenses)."
+        - name: "Lien vers le/les dépôt(s) de code sur la page d'accueil"
+          description: "Le lien du/des dépôt(s) de code doit être affiché dans les 400 premiers pixels (hauteur) de la page d'accueil du site Web."
+        - name: "Contacts"
+          description: "Sur le site Web, les informations pour contacter les membres du projet doivent être affichées et faciles à trouver."
+        - name: "Langue du site"
+          description: "Le site Web doit être, au moins, en anglais."
+        - name: "Nouvelles fraîches"
+          description: "Le site Web doit contenir des actualités, et au moins une actualité par trimestre."
+      - title: "Changelog"
+        rules:
+        - name: "Page web"
+          description: "Le projet doit avoir une page publique avec le journal des modifications (peut être sur son propre site Web ou sur un autre site Web)."
+        - name: "Lien sur la page d'accueil"
+          description: "Sur la page d'accueil du site, le lien vers le changelog doit être affiché dans les 400 premiers pixels (hauteur)."
+      - title: "Fonctionnalités demandées par la communauté"
+        rules:
+          - name: "Utilisateurs"
+            description: "Tout utilisateur peut créer une demande de fonctionnalité."
+          - name: "Liste des fonctionnalités"
+            description: "Le projet doit avoir une page Web avec la liste des demandes de fonctionnalités (dans n'importe quel état)."
+          - name: "Fonctionnalité rejetée"
+            description: "En cas de rejet d'une demande de fonctionnalité, une raison DOIT ÊTRE DONNÉE."
+          - name: "Raison acceptée"
+            description: "Dans le cas où la demande de fonctionnalité est acceptée, la version ciblée doit être définie."
+          - name: "Lien sur la page d'accueil"
+            description: "Sur la page d'accueil du site, le lien vers la liste des demandes de fonctionnalités doit être affiché dans les 400 premiers pixels (hauteur)."
+      - title: "CVE"
+        rules:
+          - name: "Page web"
+            description: "Le projet doit avoir une page avec la liste des CVE de ses produits."
+          - name: "Lien sur la page d'accueil"
+            description: "Sur la page d'accueil du site, le lien vers la liste des CVE doit être affiché dans les 400 premiers pixels (hauteur)."
+      - title: "Documentation"
+        rules:
+          - name: "Documentation"
+            description: "Le projet doit avoir une documentation, au moins, au format HTML."
+          - name: "Lien sur la page d'accueil"
+            description: "Sur la page d'accueil du site, le lien vers la documentation doit être affiché dans les 400 premiers pixels (hauteur)."
+
+  contact:
+    title: "Contactez-nous"
+    text: "Plusieurs canaux pour nous contacter"
+    items:
+      - url: https://discord.gg/KdR6dyzNUU
+        icon: "fab fa-discord"
+      - email: 'david+fusionecosystem@durieux.family'
+        icon: "fas fa-at"
+
+  footer:
+    legal: "Politique de confidentialité"
+fr-FR:
+  <<: *DEFAULT_FR

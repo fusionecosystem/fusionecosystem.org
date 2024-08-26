@@ -1,0 +1,17 @@
+<!-- Presentation -->
+<section class="page-section" id="{{ site.data.sitetext[page.lang].presentation.section | default: "presentation" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext[page.lang].presentation.title | default: "Presentation" }}</h2>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-lg-12 text-center">
+        <div class="text-muted">{{ site.data.sitetext[page.lang].presentation.description | markdownify }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Presentation -->

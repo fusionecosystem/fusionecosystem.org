@@ -1,0 +1,26 @@
+<!-- Rules -->
+<section class="page-section" id="{{ site.data.sitetext[page.lang].rules.section | default: "Rules" }}">
+<div class="container">
+  <div class="row">
+	<div class="col-lg-12 text-center">
+	  <h2 class="section-heading text-uppercase">{{ site.data.sitetext[page.lang].rules.title }}</h2>
+	  <h3 class="section-subheading text-muted">{{ site.data.sitetext[page.lang].rules.text }}</h3>
+	</div>
+  </div>
+  <div class="row">
+  {% for group in site.data.sitetext[page.lang].rules.groups %}
+	<div class="col-sm-12">
+    <span class="ruletitle"><i class="fas fa-cubes"></i> {{ group.title }}</span>
+    {% for rule in group.rules %}
+      <div class="rules-rule">
+        <i class="fas fa-arrow-right"></i>
+        <span class="bold">{{ rule.name }}</span>
+        <span class="text-muted">{{ rule.description | markdownify }}</span>
+      </div>
+    {% endfor %}
+    </div>
+  {% endfor %}
+  </div>
+</div>
+</section>
+<!-- End Rules -->
